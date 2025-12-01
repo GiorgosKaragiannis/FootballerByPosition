@@ -1,0 +1,100 @@
+CREATE DATABASE IF NOT EXISTS footballersbyposition;
+USE footballersbyposition;
+
+CREATE TABLE players (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    position INT NOT NULL,
+    name VARCHAR(100) NOT NULL
+);
+
+USE footballersbyposition;
+
+-- Θέση 1 - Τερματοφύλακες
+INSERT INTO players (position, name) VALUES
+(1, 'Manuel Neuer'), (1, 'Gianluigi Buffon'), (1, 'Iker Casillas'), (1, 'Ederson'),
+(1, 'Alisson Becker'), (1, 'David de Gea'), (1, 'Thibaut Courtois'), (1, 'Marc-André ter Stegen'),
+(1, 'Hugo Lloris'), (1, 'Petr Čech'), (1, 'Sepp Maier'), (1, 'Oliver Kahn'),
+(1, 'Pat Jennings'), (1, 'Peter Schmeichel'), (1, 'Fabien Barthez'), (1, 'Dino Zoff'),
+(1, 'Rinat Dasayev'), (1, 'Jasper Cillessen'), (1, 'Kepa Arrizabalaga'), (1, 'Jordan Pickford');
+
+-- Θέση 2 - Δεξιοί αμυντικοί
+INSERT INTO players (position, name) VALUES
+(2, 'Cafu'), (2, 'Kyle Walker'), (2, 'Dani Carvajal'), (2, 'Gary Neville'),
+(2, 'Trent Alexander-Arnold'), (2, 'Ignazio Abate'), (2, 'Darijo Srna'), (2, 'Héctor Bellerín'),
+(2, 'Giovanni Di Lorenzo'), (2, 'Benjamin Pavard'), (2, 'Philipp Lahm'), (2, 'Breno'),
+(2, 'Gunnar Nordahl'), (2, 'Márcio Santos'), (2, 'Alan Hansen'), (2, 'Gary Kelly'),
+(2, 'Bruno Peres'), (2, 'Maurício Isla'), (2, 'Sergiño Dest'), (2, 'Kieran Trippier');
+
+-- Θέση 3 - Κεντρικοί αμυντικοί  Αριστεροί
+INSERT INTO players (position, name) VALUES
+(3, 'Paolo Maldini'), (3, 'Gerard Piqué'), (3, 'Ashley Cole'), (3, 'Giorgio Chiellini'),
+(3, 'Pepe'), (3, 'Nesta'), (3, 'Éric Abidal'), (3, 'Jordi Alba'), (3, 'Alex Sandro'),
+(3, 'Theo Hernández'), (3, 'Franz Beckenbauer'), (3, 'Carles Puyol'), (3, 'Marquinhos'),
+(3, 'Raphaël Varane'), (3, 'Virgil van Dijk'), (3, 'Dani Alves'), (3, 'Thiago Silva'),
+(3, 'Fernando Hierro'), (3, 'Ronald Koeman'), (3, 'David Luiz');
+
+-- Θέση 4 - Κεντρικοί αμυντικοί  Defensive mids
+INSERT INTO players (position, name) VALUES
+(4, 'Sergio Ramos'), (4, 'Patrick Vieira'), (4, 'Claude Makélélé'), (4, 'Fabinho'),
+(4, 'Casemiro'), (4, 'David Alaba'), (4, 'Diego Godín'), (4, 'Cesc Fàbregas'),
+(4, 'Javier Zanetti'), (4, 'Franz Beckenbauer'), (4, 'Roy Keane'), (4, 'Andrea Barzagli'),
+(4, 'Marcel Desailly'), (4, 'Michael Essien'), (4, 'Gennaro Gattuso'), (4, 'Thiago Motta'),
+(4, 'Thomas Partey'), (4, 'Nemanja Matić'), (4, 'Paul Pogba'), (4, 'Sandro Tonali');
+
+-- Θέση 5 - Κεντρικοί μέσοι  Creative mids
+INSERT INTO players (position, name) VALUES
+(5, 'Xavi Hernández'), (5, 'Andrés Iniesta'), (5, 'Paul Pogba'), (5, 'Marco Verratti'),
+(5, 'Toni Kroos'), (5, 'Steven Gerrard'), (5, 'Frank Lampard'), (5, 'Luka Modrić'),
+(5, 'Bruno Fernandes'), (5, 'Ilkay Gündogan'), (5, 'Saúl Ñíguez'), (5, 'Hakan Çalhanoğlu'),
+(5, 'Andrea Pirlo'), (5, 'Michel Platini'), (5, 'Zinedine Zidane'), (5, 'Kevin De Bruyne'),
+(5, 'Cesc Fàbregas'), (5, 'Oscar'), (5, 'James Rodríguez'), (5, 'David Silva');
+
+-- Θέση 6 - Ακραίοι μέσοι  Wingers
+INSERT INTO players (position, name) VALUES
+(6, 'Cristiano Ronaldo'), (6, 'David Beckham'), (6, 'Kylian Mbappé'), (6, 'Franck Ribéry'),
+(6, 'George Best'), (6, 'Eden Hazard'), (6, 'Raheem Sterling'), (6, 'Ousmane Dembélé'),
+(6, 'Neymar Jr'), (6, 'Luis Figo'), (6, 'Paulo Dybala'), (6, 'Mohamed Salah'),
+(6, 'Lionel Messi'), (6, 'Gareth Bale'), (6, 'Antonio Valencia'), (6, 'Arjen Robben'),
+(6, 'Riyad Mahrez'), (6, 'Sadio Mané'), (6, 'Angel Di María'), (6, 'Marcus Rashford');
+
+-- Θέση 7 - Επιθετικοί  Forwards
+INSERT INTO players (position, name) VALUES
+(7, 'Robert Lewandowski'), (7, 'Luis Suárez'), (7, 'Karim Benzema'), (7, 'Erling Haaland'),
+(7, 'Gabriel Batistuta'), (7, 'Marco van Basten'), (7, 'Fernando Torres'), (7, 'Zlatan Ibrahimović'),
+(7, 'Samuel Eto'o'), (7, 'Romário'), (7, 'Raúl González'), (7, 'Thierry Henry'), (7, 'Ronaldo Nazário'),
+(7, 'Harry Kane'), (7, 'Romelu Lukaku'), (7, 'Gabriel Jesus'), (7, 'Luis Figo'), (7, 'Pierre-Emerick Aubameyang'),
+(7, 'Paolo Rossi'), (7, 'Roberto Baggio');
+
+-- Θέση 8 - Επιθετικοί  Second forwards
+INSERT INTO players (position, name) VALUES
+(8, 'Lionel Messi'), (8, 'Diego Maradona'), (8, 'Pelé'), (8, 'Ronaldinho'),
+(8, 'Paulo Dybala'), (8, 'Luka Modrić'), (8, 'Wayne Rooney'), (8, 'Francesco Totti'),
+(8, 'Johan Cruyff'), (8, 'Michel Platini'), (8, 'Kevin De Bruyne'), (8, 'James Rodríguez'),
+(8, 'Thomas Müller'), (8, 'Kaka'), (8, 'Zinedine Zidane'), (8, 'David Silva'),
+(8, 'Bernardo Silva'), (8, 'Gareth Bale'), (8, 'Neymar Jr'), (8, 'Cristiano Ronaldo');
+
+-- Θέση 9 - Επιθετικοί  Strikers
+INSERT INTO players (position, name) VALUES
+(9, 'Mohamed Salah'), (9, 'Karim Benzema'), (9, 'Harry Kane'), (9, 'Romelu Lukaku'),
+(9, 'Gabriel Jesus'), (9, 'Luis Suárez'), (9, 'Erling Haaland'), (9, 'Robert Lewandowski'),
+(9, 'Romário'), (9, 'Gabriel Batistuta'), (9, 'Thierry Henry'), (9, 'Paolo Rossi'),
+(9, 'Marco van Basten'), (9, 'Ronaldo Nazário'), (9, 'Fernando Torres'), (9, 'Zlatan Ibrahimović'),
+(9, 'Wayne Rooney'), (9, 'Samuel Eto'o'), (9, 'Raúl González'), (9, 'Roberto Baggio');
+
+-- Θέση 10 - Επιθετικοί  Second strikers
+INSERT INTO players (position, name) VALUES
+(10, 'Neymar Jr'), (10, 'Lionel Messi'), (10, 'Diego Maradona'), (10, 'Pelé'),
+(10, 'Ronaldinho'), (10, 'Paulo Dybala'), (10, 'Kaka'), (10, 'Mesut Özil'),
+(10, 'Francesco Totti'), (10, 'Luka Modrić'), (10, 'James Rodríguez'), (10, 'Cristiano Ronaldo'),
+(10, 'Thomas Müller'), (10, 'Kevin De Bruyne'), (10, 'Zinedine Zidane'), (10, 'David Silva'),
+(10, 'Gareth Bale'), (10, 'Bernardo Silva'), (10, 'Philippe Coutinho'), (10, 'Eden Hazard');
+
+-- Θέση 11 - Ακραίοι επιθετικοί  Left winger
+INSERT INTO players (position, name) VALUES
+(11, 'Mohamed Salah'), (11, 'Ryan Giggs'), (11, 'Didier Drogba'), (11, 'Romário'),
+(11, 'Gareth Bale'), (11, 'Kingsley Coman'), (11, 'Marc Overmars'), (11, 'Angel Di María'),
+(11, 'Pedro Rodríguez'), (11, 'Adriano'), (11, 'Franck Ribéry'), (11, 'Arjen Robben'),
+(11, 'Sadio Mané'), (11, 'Riyad Mahrez'), (11, 'Neymar Jr'), (11, 'Cristiano Ronaldo'),
+(11, 'Lionel Messi'), (11, 'Eden Hazard'), (11, 'Paulo Dybala'), (11, 'Ousmane Dembélé');
+
+SELECT COUNT() FROM players;
